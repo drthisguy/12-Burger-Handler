@@ -1,0 +1,29 @@
+{
+  "name": "burger-handler",
+  "version": "1.0.0",
+  "description": "Express MySQL app, using handlebars",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "devstart": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drthisguy/12-Burger-Handler.git"
+  },
+  "author": "Page Tyler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drthisguy/12-Burger-Handler/issues"
+  },
+  "homepage": "https://github.com/drthisguy/12-Burger-Handler#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
