@@ -9,7 +9,7 @@ burger = {
     },
 
     create: function(cols, vals, cb) {
-        orm.insterOne('burgers', cols, vals, (res) => {
+        orm.instertOne('burgers', cols, vals, (res) => {
             cb(res);
         });
     },

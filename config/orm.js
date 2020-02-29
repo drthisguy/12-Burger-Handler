@@ -26,17 +26,17 @@ const orm = {
             });
     },
     
-    insterOne: function(table, cols, vals, cb) {
+    instertOne: function(table, cols, vals, cb) {
             const queryString = `INSERT INTO ${table} (${cols.toString()}) 
-                VALUES (${getQuestionMarks(vals)}) `
-            
+                VALUES (${getQuestionMarks(vals)}) `;
+            console.log(vals, cols);
              console.log(queryString);
 
              connection.query(queryString, vals, (err, res) => {
                      if (err) throw err;
 
                      cb(res);
-             });
+         });
     },
 
     updateOne: function(table, elements, condition, cb) {
