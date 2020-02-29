@@ -1,9 +1,9 @@
 <div class="container">
         <div class="row mt-5">
             <div class="jumbotron">
-                <div class="row">
+                <div class="row text-center">
                     <div class="col md-4">
-                        <h2>Burger Stash</h2>   
+                        <h2 class="off-center">Burger Stash</h2>   
                         <ul>
                             {{#each burgers}}
                               {{#unless devoured}}
@@ -16,9 +16,9 @@
                           </ul>
 
                     </div>
-                    <div class="col md-4">
+                    <div class="col md-4 off-center text-center">
+                    <img src="assets/img/hamburger-realistic.jpg" alt="Burger">
                         <h2>Add more burgers</h2>   
-
                     <form class="new-burger">
                     <div class="form-group">
                         <label for="burger">Burger:</label>
@@ -29,7 +29,7 @@
 
                     </div>
                     <div class="col md-4">
-                        <h2>Devoured burgers</h2>   
+                        <h2 class="off-center">Devoured burgers</h2>   
                         <ul>
                             {{#each burgers}}
                               {{#if devoured}}

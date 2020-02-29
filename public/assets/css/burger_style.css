@@ -1,0 +1,32 @@
+.navbar-brand {
+    margin: o;
+    padding: 0;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+h2 {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    border: 1px solid #DCDCDC;
+    border-radius: 15px;
+}
+
+.off-center{
+    margin-left: 2rem;
+}
+
+.jumbotron {
+    background-color: #fff;
+}
