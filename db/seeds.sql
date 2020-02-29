@@ -1,4 +1,4 @@
-USE burgers_db;
+USE r6gkv1p6dhbo093e;
 
 INSERT INTO burgers (burger_name) 
 VALUES ('Hamburger'), ('Cheeseburger'), ('Turkey Burger'), ('Mushroom Burger'), ('Salmon Burger');
