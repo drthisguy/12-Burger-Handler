@@ -32,7 +32,7 @@ const orm = {
             
              console.log(queryString);
 
-             connection.query(querySting, vals, (err, res) => {
+             connection.query(queryString, vals, (err, res) => {
                      if (err) throw err;
 
                      cb(res);
@@ -43,8 +43,8 @@ const orm = {
             const queryString =  `UPDATE ${table} SET ${sqlizor(elements)} WHERE ${condition}`; 
 
                 console.log(queryString);
-            connection.query(querySting, (err, res) => {
-                    if (err) throw err;
+            connection.query(queryString, (err, res) => {
+                    if (err) console.log(err);
 
                     cb(res);
             })

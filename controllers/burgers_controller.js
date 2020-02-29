@@ -27,9 +27,14 @@ router.put('/api/burgers/:id', (req, res) => {
     const condition = `id = ${req.params.id}`;
 
     burger.devoure({
-        devoure: req.body.devoured  
+        devoured: req.body.devoured  
     }, condition, (data) => {
-        return data.changedRows == 0 ? res.status(404).end() : res.status(200).end();
+        if(data.changedRows == 0) {
+
+          return res.status(404).end() 
+        }else {
+            res.status(200).end();
+        }
     });
 });
 module.exports = router;
