@@ -30,3 +30,6 @@ li {
 .jumbotron {
     background-color: #fff;
 }
+.form-rounded {
+    border-radius: 1rem;
+}
