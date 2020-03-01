@@ -1,47 +1,47 @@
 <div class="container">
-        <div class="row mt-5">
-            <div class="jumbotron">
-                <div class="row text-center">
-                    <div class="col md-4">
-                        <h2 class="off-center">Burger Stash</h2>   
-                        <ul>
-                            {{#each burgers}}
-                              {{#unless devoured}}
-                                <li>
-                                    <p>{{burger_name}}</p>
-                                    <button class="eat" data-id="{{id}}">Devoure</button>
-                                </li>
-                              {{/unless}}
-                            {{/each}}
-                          </ul>
+  <div class="row mt-5">
+    <div class="jumbotron">
+      <div class="row text-center">
+        <div class="col md-4">
+          <h2 class="off-center">Burger Stash</h2>
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li>
+              <p>{{burger_name}}</p>
+              <button class="eat" data-id="{{id}}">Devoure</button>
+            </li>
+            {{/unless}}
+            {{/each}}
+          </ul>
 
-                    </div>
-                    <div class="col md-4 off-center text-center">
-                    <img src="assets/img/hamburger-realistic.jpg" alt="Burger">
-                        <h2>Add more burgers</h2>   
-                    <form class="new-burger">
-                    <div class="form-group">
-                        <label for="burger">Burger:</label>
-                        <input type="text" class="form-rounded" id="burger" name="burger" placeholder=" Add some more!">
-                    </div>
-                    <button type="submit">Add Burger</button>
-                    </form>
-
-                    </div>
-                    <div class="col md-4">
-                        <h2 class="off-center">Devoured burgers</h2>   
-                        <ul>
-                            {{#each burgers}}
-                              {{#if devoured}}
-                                <li>
-                                    <p>{{burger_name}}</p>
-                                </li>
-                              {{/if}}
-                            {{/each}}
-                          </ul>
-                        
-                    </div>
-                </div>
-              </div>
         </div>
+        <div class="col md-4 off-center text-center">
+          <img src="assets/img/hamburger-realistic.jpg" alt="Burger">
+          <h2>Add more burgers</h2>
+          <form class="new-burger">
+            <div class="form-group">
+              <label for="burger">Burger:</label>
+              <input type="text" class="form-rounded" id="burger" name="burger" placeholder=" Add some more!">
+            </div>
+            <button type="submit">Add Burger</button>
+          </form>
+
+        </div>
+        <div class="col md-4">
+          <h2 class="off-center">Devoured burgers</h2>
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>
+              <p>{{burger_name}}</p>
+            </li>
+            {{/if}}
+            {{/each}}
+          </ul>
+
+        </div>
+      </div>
     </div>
+  </div>
+</div>

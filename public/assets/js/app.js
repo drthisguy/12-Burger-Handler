@@ -10,7 +10,6 @@ document.querySelector(".new-burger").addEventListener("submit", (e) => {
         type: 'POST',
         data: newBurger
     }).then( () => {
-        console.log('new burger added!');
         location.reload();
     })
     e.preventDefault();
@@ -22,12 +21,11 @@ const eaten = document.querySelectorAll(".eat");
      eats.addEventListener("click", function() {
     const id = $(this).data('id'),
         eat = { devoured: true };
-    console.log(id, this);
+
         $.ajax(`/api/burgers/${id}`, {
             type: 'PUT',
             data: eat
         }).then( () => {
-            console.log(`Your ${$(this).siblings('p').text()} has been devoured!`);
             location.reload();
         })
     });

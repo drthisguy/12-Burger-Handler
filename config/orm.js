@@ -23,14 +23,12 @@ const orm = {
                     if (err) throw err;
 
                     cb(res);
-            });
+        });
     },
     
     instertOne: function(table, cols, vals, cb) {
             const queryString = `INSERT INTO ${table} (${cols.toString()}) 
                 VALUES (${getQuestionMarks(vals)}) `;
-            console.log(vals, cols);
-             console.log(queryString);
 
              connection.query(queryString, vals, (err, res) => {
                      if (err) throw err;
@@ -42,12 +40,11 @@ const orm = {
     updateOne: function(table, elements, condition, cb) {
             const queryString =  `UPDATE ${table} SET ${sqlizor(elements)} WHERE ${condition}`; 
 
-                console.log(queryString);
             connection.query(queryString, (err, res) => {
                     if (err) console.log(err);
 
                     cb(res);
-            })
+        });
     }
 }
 module.exports = orm;
