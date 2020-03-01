@@ -1,5 +1,7 @@
         const connection = require('./connection');
 
+
+//Helper functions could provide future scalability
 function getQuestionMarks(arr) {
 
   return arr.map(x => '?').reduce((acc, cur) => acc += cur, '');
@@ -17,6 +19,7 @@ function getQuestionMarks(arr) {
    return arr.toString();
   }
 
+//relational maping
 const orm = {
     selectAll: function(table, cb) {
             connection.query(`SELECT * FROM ${table};`, (err, res) => {

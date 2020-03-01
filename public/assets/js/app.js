@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+//client side js
 
 document.querySelector(".new-burger").addEventListener("submit", (e) => {
     const newBurger = {

@@ -1,6 +1,6 @@
             const orm = require('../config/orm'),
 
-
+//database layer
 burger = {
     all: function(cb) {
         orm.selectAll('burgers', res => cb(res));
